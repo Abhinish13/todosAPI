@@ -1,0 +1,29 @@
+{
+  "name": "nodejsapi",
+  "version": "1.0.0",
+  "description": "This is a POC for API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhinish13/todosAPI.git"
+  },
+  "keywords": [
+    "API",
+    "Nodejs"
+  ],
+  "author": "Abhinsih Raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abhinish13/todosAPI/issues"
+  },
+  "homepage": "https://github.com/Abhinish13/todosAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "github:mysqljs/mysql",
+    "mysql2": "^1.6.4"
+  }
+}
