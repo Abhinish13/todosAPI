@@ -1,6 +1,5 @@
 const app   = require('express')();
-const mysql = require('mysql');
-const {get_attributes} = require('./mysql_conf');
+const {get_attributes,set_attributes} = require('./mysql_conf');
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
@@ -18,11 +17,11 @@ app.get('/',(req,res) =>{
 
 app.post('/update',(req,res) =>{
 
-    console.log(req.body.id+''+req.body.name);
-
+    console.log(`Title : ${req.body.title} \nStatus : ${req.body.status}`);
+    set_attributes(req.body.title,req.body.status);
 
     res.status(200)
-        .send('helloworld');
+        .send('Task Added');
 
 });
 
