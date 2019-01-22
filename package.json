@@ -4,7 +4,8 @@
   "description": "This is a POC for API",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,11 @@
     "express": "^4.16.4",
     "mysql": "github:mysqljs/mysql",
     "mysql2": "^1.6.4"
+  },
+  "devDependencies": {
+    "expect": "^23.6.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "supertest": "^3.4.1"
   }
 }
